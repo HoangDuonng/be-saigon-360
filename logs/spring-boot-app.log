@@ -1,0 +1,262 @@
+2025-03-04T12:55:39.956+07:00  INFO 17988 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : Starting BeServiceApplication using Java 23.0.1 with PID 17988 (D:\love\be-saigon-360\target\classes started by honga in D:\love\be-saigon-360)
+2025-03-04T12:55:39.962+07:00  INFO 17988 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-04T12:55:41.790+07:00  INFO 17988 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'jpaAuditingHandler' with an equivalent definition: replacing [Root bean: class=org.springframework.data.auditing.AuditingHandler; scope=; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.auditing.AuditingHandler; scope=; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T12:55:41.794+07:00  INFO 17988 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.data.jpa.domain.support.AuditingEntityListener' with an equivalent definition: replacing [Root bean: class=org.springframework.data.jpa.domain.support.AuditingEntityListener; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.jpa.domain.support.AuditingEntityListener; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T12:55:41.796+07:00  INFO 17988 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor' with an equivalent definition: replacing [Root bean: class=org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T12:55:42.367+07:00  INFO 17988 --- [be-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-04T12:55:42.920+07:00  INFO 17988 --- [be-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 528 ms. Found 5 JPA repository interfaces.
+2025-03-04T12:55:45.364+07:00  INFO 17988 --- [be-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8386 (http)
+2025-03-04T12:55:45.422+07:00  INFO 17988 --- [be-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-04T12:55:45.424+07:00  INFO 17988 --- [be-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-04T12:55:45.639+07:00  INFO 17988 --- [be-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-04T12:55:45.640+07:00  INFO 17988 --- [be-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5525 ms
+2025-03-04T12:55:46.205+07:00  INFO 17988 --- [be-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-04T12:55:46.933+07:00  INFO 17988 --- [be-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d25f816
+2025-03-04T12:55:46.937+07:00  INFO 17988 --- [be-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-04T12:55:47.600+07:00  INFO 17988 --- [be-service] [main] liquibase.database                       : Set default schema name to public
+2025-03-04T12:55:49.580+07:00  INFO 17988 --- [be-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-04T12:55:49.688+07:00  INFO 17988 --- [be-service] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-04T12:55:49.695+07:00  INFO 17988 --- [be-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-04T12:55:49.758+07:00  INFO 17988 --- [be-service] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-04T12:55:49.764+07:00  INFO 17988 --- [be-service] [main] liquibase.util                           : Run:                          0
+2025-03-04T12:55:49.765+07:00  INFO 17988 --- [be-service] [main] liquibase.util                           : Previously run:               2
+2025-03-04T12:55:49.767+07:00  INFO 17988 --- [be-service] [main] liquibase.util                           : Filtered out:                 0
+2025-03-04T12:55:49.769+07:00  INFO 17988 --- [be-service] [main] liquibase.util                           : -------------------------------
+2025-03-04T12:55:49.770+07:00  INFO 17988 --- [be-service] [main] liquibase.util                           : Total change sets:            2
+2025-03-04T12:55:49.774+07:00  INFO 17988 --- [be-service] [main] liquibase.util                           : Update summary generated
+2025-03-04T12:55:49.804+07:00  INFO 17988 --- [be-service] [main] liquibase.command                        : Command execution complete
+2025-03-04T12:55:50.096+07:00  INFO 17988 --- [be-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-04T12:55:50.328+07:00  INFO 17988 --- [be-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-03-04T12:55:50.445+07:00  INFO 17988 --- [be-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-04T12:55:51.331+07:00  INFO 17988 --- [be-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-04T12:55:51.605+07:00  WARN 17988 --- [be-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-04T12:55:51.648+07:00  INFO 17988 --- [be-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-04T12:55:54.536+07:00  INFO 17988 --- [be-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-04T12:55:54.544+07:00  INFO 17988 --- [be-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-04T12:55:55.985+07:00  WARN 17988 --- [be-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-04T12:55:56.231+07:00  WARN 17988 --- [be-service] [main] o.s.w.s.resource.ResourceHandlerUtils    : Appended trailing slash to static resource location: classpath:/files/images/**/
+2025-03-04T12:55:58.848+07:00  INFO 17988 --- [be-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8386 (http) with context path '/'
+2025-03-04T12:55:58.858+07:00  INFO 17988 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : Started BeServiceApplication in 20.35 seconds (process running for 21.524)
+2025-03-04T12:56:24.788+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-04T12:56:24.797+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-04T12:56:24.863+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2025-03-04T12:56:25.229+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: c700a5d5-4201-420b-a136-e26f9eb20242
+2025-03-04T12:56:25.229+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-2] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: c700a5d5-4201-420b-a136-e26f9eb20242
+2025-03-04T12:56:25.230+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-2] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=c700a5d5-4201-420b-a136-e26f9eb20242
+2025-03-04T12:56:25.230+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=c700a5d5-4201-420b-a136-e26f9eb20242
+2025-03-04T12:56:47.592+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-4] c.b.s.b.configuration.SecurityConfig     : Access Token: ya29.a0AeXRPp4ISmMyAu5cgmcaz5AweYan3qxGZqYRtd7rBaP8F2n5iqiWDNVw_6oISjItIRZY4HZVtPvL1ESZ-ytctr0VPD0kW-8pp2CvmAcQ5Z5ZNlOBWiLkkcWmAEwtBhlUdRg3RGnHihAGc7M8ypdelCL9TSAw-U8hhtwUkVFMaCgYKAXQSARESFQHGX2MiTo-5JmhzSBFIt5_iyQT5ig0175
+2025-03-04T12:56:47.594+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-4] c.b.s.b.configuration.SecurityConfig     : Refresh Token: 1//0eF1kSzAgOstICgYIARAAGA4SNwF-L9IrS_KpK3NGPHvaSW2g4xL-aSDL8RhcA0L-6NNsZffotikQjZgL_D2qFETj0rP4FgqAGUo
+2025-03-04T12:58:01.150+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-10] c.b.s.b.services.AppService.AuthService  : Tao moi nguoi dung: BaseEntity(createdBy=null, updatedBy=null, createdAt=null, updatedAt=null)
+2025-03-04T12:58:01.297+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-10] c.b.s.b.c.A.Oauth2Controller             : check user login: 
+2025-03-04T12:58:01.301+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-10] c.b.s.b.c.A.Oauth2Controller             : Login successfully! With Mess: 
+2025-03-04T13:04:10.998+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-2] c.b.s.b.configuration.SecurityConfig     : Access Token: ya29.a0AeXRPp6XZWOObZurTKfHDyNIgcvWlG___Q9XAqt1Zvr0rZmLODVcqIvcfNBNExmZGNB9XqdLhOvCU_NnBKIAA7MzFuYqrxQpqdlq_29kj62-wEbOBRQRfYO2OtA_MKcznWXIu639UhLhFURNSl_2qA33h9sq7b7qc3JZQt0zaCgYKAX4SARESFQHGX2MiQmenfrWaBmrjhMx1w_E8CA0175
+2025-03-04T13:04:11.030+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-2] c.b.s.b.configuration.SecurityConfig     : Refresh Token: 1//0eJ9eCN-2uLe3CgYIARAAGA4SNwF-L9Ir91RnxOInvHqu6k8ZwYKwarPHSlR2MBOuJLJ4mSATmDXWmXHZwgZmVlPGruBzbqe7i6Y
+2025-03-04T13:12:29.878+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-4] c.b.s.b.configuration.SecurityConfig     : Access Token: ya29.a0AeXRPp6HToIB9bHJ-h1lnaHk6gse7DqmE2_LLtRRZtvpIvqgyX33Dzamt5wJj1hkIOQBBIIe7EsA2EBwdIzl74q1BaJU-KUFSlildoUpi3xgz-EpwQl6nwfv605ZjqU_v5QPDlUZ7B48T5INR2KhB3v3zKfnMsSfpXm2bf55aCgYKAdQSARESFQHGX2Mi2Rai8jVL_h8hNrEB_xRJeg0175
+2025-03-04T13:12:29.907+07:00  INFO 17988 --- [be-service] [http-nio-8386-exec-4] c.b.s.b.configuration.SecurityConfig     : Refresh Token: 1//0ebixyNLnRD4LCgYIARAAGA4SNwF-L9IrfqBfi5Q4ZEhQuKuNxlhDDovgu9m3lBNngEmJzNk-679-q2IIewWhpGgXr_zx4u8E6b0
+2025-03-04T13:19:35.832+07:00  INFO 17988 --- [be-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-04T13:19:37.005+07:00  INFO 17988 --- [be-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-04T13:19:50.238+07:00  INFO 19284 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : Starting BeServiceApplication using Java 23.0.1 with PID 19284 (D:\love\be-saigon-360\target\classes started by honga in D:\love\be-saigon-360)
+2025-03-04T13:19:50.240+07:00  INFO 19284 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-04T13:19:51.158+07:00  INFO 19284 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'jpaAuditingHandler' with an equivalent definition: replacing [Root bean: class=org.springframework.data.auditing.AuditingHandler; scope=; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.auditing.AuditingHandler; scope=; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T13:19:51.159+07:00  INFO 19284 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.data.jpa.domain.support.AuditingEntityListener' with an equivalent definition: replacing [Root bean: class=org.springframework.data.jpa.domain.support.AuditingEntityListener; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.jpa.domain.support.AuditingEntityListener; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T13:19:51.160+07:00  INFO 19284 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor' with an equivalent definition: replacing [Root bean: class=org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T13:19:51.446+07:00  INFO 19284 --- [be-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-04T13:19:51.700+07:00  INFO 19284 --- [be-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 240 ms. Found 5 JPA repository interfaces.
+2025-03-04T13:19:52.722+07:00  INFO 19284 --- [be-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8386 (http)
+2025-03-04T13:19:52.746+07:00  INFO 19284 --- [be-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-04T13:19:52.747+07:00  INFO 19284 --- [be-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-04T13:19:52.850+07:00  INFO 19284 --- [be-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-04T13:19:52.851+07:00  INFO 19284 --- [be-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2526 ms
+2025-03-04T13:19:53.220+07:00  INFO 19284 --- [be-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-04T13:19:53.601+07:00  INFO 19284 --- [be-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62b0bf85
+2025-03-04T13:19:53.603+07:00  INFO 19284 --- [be-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-04T13:19:53.898+07:00  INFO 19284 --- [be-service] [main] liquibase.database                       : Set default schema name to public
+2025-03-04T13:19:55.299+07:00  INFO 19284 --- [be-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-04T13:19:55.389+07:00  INFO 19284 --- [be-service] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-04T13:19:55.395+07:00  INFO 19284 --- [be-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-04T13:19:55.415+07:00  INFO 19284 --- [be-service] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-04T13:19:55.416+07:00  INFO 19284 --- [be-service] [main] liquibase.util                           : Run:                          0
+2025-03-04T13:19:55.417+07:00  INFO 19284 --- [be-service] [main] liquibase.util                           : Previously run:               2
+2025-03-04T13:19:55.419+07:00  INFO 19284 --- [be-service] [main] liquibase.util                           : Filtered out:                 0
+2025-03-04T13:19:55.421+07:00  INFO 19284 --- [be-service] [main] liquibase.util                           : -------------------------------
+2025-03-04T13:19:55.423+07:00  INFO 19284 --- [be-service] [main] liquibase.util                           : Total change sets:            2
+2025-03-04T13:19:55.428+07:00  INFO 19284 --- [be-service] [main] liquibase.util                           : Update summary generated
+2025-03-04T13:19:55.433+07:00  INFO 19284 --- [be-service] [main] liquibase.command                        : Command execution complete
+2025-03-04T13:19:55.671+07:00  INFO 19284 --- [be-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-04T13:19:55.820+07:00  INFO 19284 --- [be-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-03-04T13:19:55.922+07:00  INFO 19284 --- [be-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-04T13:19:56.491+07:00  INFO 19284 --- [be-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-04T13:19:56.618+07:00  WARN 19284 --- [be-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-04T13:19:56.656+07:00  INFO 19284 --- [be-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-04T13:19:58.728+07:00  INFO 19284 --- [be-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-04T13:19:58.733+07:00  INFO 19284 --- [be-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-04T13:19:59.659+07:00  WARN 19284 --- [be-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-04T13:19:59.853+07:00  WARN 19284 --- [be-service] [main] o.s.w.s.resource.ResourceHandlerUtils    : Appended trailing slash to static resource location: classpath:/files/images/**/
+2025-03-04T13:20:01.272+07:00  INFO 19284 --- [be-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8386 (http) with context path '/'
+2025-03-04T13:20:01.282+07:00  INFO 19284 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : Started BeServiceApplication in 11.944 seconds (process running for 12.603)
+2025-03-04T13:20:20.003+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-04T13:20:20.004+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-04T13:20:20.007+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-03-04T13:20:20.233+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: 06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:20:20.233+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-2] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: 06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:20:20.233+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:20:20.234+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-2] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:20:30.872+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-9] c.b.s.b.configuration.SecurityConfig     : Access Token: ya29.a0AeXRPp7Pvhs9xkPQwq93QCxnWhZq4x7WBAEc-3IxRlJjk2StXMSbv8FulgVyt4BS87H0MS2PTfUhF3hb6gU-aRzS6ReN15MP2nW9hGMJRth0KkB0Rhntld4zC3Euukh4SI2oEqOSblyZthQsGuaD6L_D4SDAJWIIsxkUhAk8aCgYKAb0SARESFQHGX2MiVcia_Jijo3TNmhyWifJ7sA0175
+2025-03-04T13:20:30.872+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-9] c.b.s.b.configuration.SecurityConfig     : Refresh Token: 1//0eMGClJi3RTpBCgYIARAAGA4SNwF-L9IrhZ9F3Rm3P954XUMDJqviXK_YgieNONf-Edy6w5rkDRngZziRe0vnDUIfF8scdT7G5fM
+2025-03-04T13:23:10.132+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-4] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: 06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:23:10.132+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-5] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: 06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:23:10.164+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-4] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:23:10.179+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-5] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:23:33.490+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-9] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: 06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:23:33.491+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-9] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:23:33.512+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-10] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: 06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:23:33.515+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-10] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T13:40:17.529+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.configuration.SecurityConfig     : Access Token: ya29.a0AeXRPp4B7tnT1uSJRFq6Ii5taXhrhRKbMOgrNUzr7ThqWKiV0jonS_FLa4ukaUAWea_Lx_GfD2QH-lyFllDXWQca1F9HhwzQAOdEq2BpylGR2dDqO5kPMOKCEduIFhtNnpX_2dHUuERXdYVJcNrZrQiAEZPeVXVEYiETLc15aCgYKAQcSARESFQHGX2MiRc0Qe7v-fJ250CdQpXPh4Q0175
+2025-03-04T13:40:17.569+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.configuration.SecurityConfig     : Refresh Token: 1//0eFePyVEEgF7sCgYIARAAGA4SNwF-L9Irxe9T92Bz9dvTeuEKyq4omy5KZrRgI0vOZWH-S95OQGKMlGOsqK-34wNfnlxc6Q7idqc
+2025-03-04T14:45:27.154+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-7] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: 06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T14:45:27.154+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-9] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: 06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T14:45:27.307+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-9] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T14:45:27.291+07:00  INFO 19284 --- [be-service] [http-nio-8386-exec-7] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T21:24:40.473+07:00  INFO 18676 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : Starting BeServiceApplication using Java 23.0.1 with PID 18676 (D:\love\be-saigon-360\target\classes started by honga in D:\love\be-saigon-360)
+2025-03-04T21:24:40.478+07:00  INFO 18676 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-04T21:24:41.648+07:00  INFO 18676 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'jpaAuditingHandler' with an equivalent definition: replacing [Root bean: class=org.springframework.data.auditing.AuditingHandler; scope=; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.auditing.AuditingHandler; scope=; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T21:24:41.649+07:00  INFO 18676 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.data.jpa.domain.support.AuditingEntityListener' with an equivalent definition: replacing [Root bean: class=org.springframework.data.jpa.domain.support.AuditingEntityListener; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.jpa.domain.support.AuditingEntityListener; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T21:24:41.649+07:00  INFO 18676 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor' with an equivalent definition: replacing [Root bean: class=org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T21:24:42.206+07:00  INFO 18676 --- [be-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-04T21:24:42.916+07:00  INFO 18676 --- [be-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 668 ms. Found 5 JPA repository interfaces.
+2025-03-04T21:24:44.680+07:00  INFO 18676 --- [be-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8386 (http)
+2025-03-04T21:24:44.707+07:00  INFO 18676 --- [be-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-04T21:24:44.708+07:00  INFO 18676 --- [be-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-04T21:24:44.826+07:00  INFO 18676 --- [be-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-04T21:24:44.827+07:00  INFO 18676 --- [be-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4260 ms
+2025-03-04T21:24:45.125+07:00  INFO 18676 --- [be-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-04T21:24:45.521+07:00  INFO 18676 --- [be-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b3fc6d8
+2025-03-04T21:24:45.523+07:00  INFO 18676 --- [be-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-04T21:24:45.866+07:00  INFO 18676 --- [be-service] [main] liquibase.database                       : Set default schema name to public
+2025-03-04T21:24:46.979+07:00  INFO 18676 --- [be-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-04T21:24:47.101+07:00  INFO 18676 --- [be-service] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-04T21:24:47.107+07:00  INFO 18676 --- [be-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-04T21:24:47.136+07:00  INFO 18676 --- [be-service] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-04T21:24:47.139+07:00  INFO 18676 --- [be-service] [main] liquibase.util                           : Run:                          0
+2025-03-04T21:24:47.140+07:00  INFO 18676 --- [be-service] [main] liquibase.util                           : Previously run:               2
+2025-03-04T21:24:47.140+07:00  INFO 18676 --- [be-service] [main] liquibase.util                           : Filtered out:                 0
+2025-03-04T21:24:47.140+07:00  INFO 18676 --- [be-service] [main] liquibase.util                           : -------------------------------
+2025-03-04T21:24:47.141+07:00  INFO 18676 --- [be-service] [main] liquibase.util                           : Total change sets:            2
+2025-03-04T21:24:47.143+07:00  INFO 18676 --- [be-service] [main] liquibase.util                           : Update summary generated
+2025-03-04T21:24:47.149+07:00  INFO 18676 --- [be-service] [main] liquibase.command                        : Command execution complete
+2025-03-04T21:24:47.318+07:00  INFO 18676 --- [be-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-04T21:24:47.430+07:00  INFO 18676 --- [be-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-03-04T21:24:47.490+07:00  INFO 18676 --- [be-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-04T21:24:47.963+07:00  INFO 18676 --- [be-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-04T21:24:48.056+07:00  WARN 18676 --- [be-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-04T21:24:48.079+07:00  INFO 18676 --- [be-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-04T21:24:50.034+07:00  INFO 18676 --- [be-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-04T21:24:50.041+07:00  INFO 18676 --- [be-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-04T21:24:51.355+07:00  WARN 18676 --- [be-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-04T21:24:51.630+07:00  WARN 18676 --- [be-service] [main] o.s.w.s.resource.ResourceHandlerUtils    : Appended trailing slash to static resource location: classpath:/files/images/**/
+2025-03-04T21:24:53.483+07:00  INFO 18676 --- [be-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8386 (http) with context path '/'
+2025-03-04T21:24:53.495+07:00  INFO 18676 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : Started BeServiceApplication in 14.147 seconds (process running for 15.698)
+2025-03-04T21:25:36.958+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-04T21:25:36.974+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-04T21:25:37.030+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 53 ms
+2025-03-04T21:25:39.665+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-2] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: 06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T21:25:39.667+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: 06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T21:25:39.694+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-2] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T21:25:39.694+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=06adb14d-f98d-40f8-be09-5e831b85fabd
+2025-03-04T21:26:20.897+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-10] c.b.s.b.configuration.SecurityConfig     : Access Token: ya29.a0AeXRPp4ECeBTeZa-CrqaaytOA8Kx_3ns64V7hbfLMOP6_25ev8J3mSI1KI1ywZVIVzV8PEjiDfWfYvzgUNHYt33zpZvo_W4rzbvgoEv5Aa17DFnMENAq5L4AvngFkIV9Zp6b9r7hu9fMLF3PIpZ2mA-fxHo_Zvtn-4n6z99raCgYKAbMSARESFQHGX2MifHVolE7HB1J9Y9M9m5E7ZA0175
+2025-03-04T21:26:20.899+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-10] c.b.s.b.configuration.SecurityConfig     : Refresh Token: 1//0eCehLlvAn2VkCgYIARAAGA4SNwF-L9IrG0S_3j9QGTKgXLjoGVtGb1uQIvqk8CJI_oknyoSTNgF2ed8m1lPJVTGoQ5xHEQfnfd0
+2025-03-04T21:27:08.403+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.services.AppService.AuthService  : Tao moi nguoi dung: BaseEntity(createdBy=null, updatedBy=null, createdAt=null, updatedAt=null)
+2025-03-04T21:27:08.809+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.c.A.Oauth2Controller             : check user login: 
+2025-03-04T21:27:08.832+07:00  INFO 18676 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.c.A.Oauth2Controller             : Login successfully! With Mess: 
+2025-03-04T21:27:09.007+07:00  WARN 18676 --- [be-service] [http-nio-8386-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-03-04T21:27:09.029+07:00  WARN 18676 --- [be-service] [http-nio-8386-exec-2] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2025-03-04T21:29:35.245+07:00  INFO 18676 --- [be-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-04T21:29:36.412+07:00  INFO 18676 --- [be-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-04T21:30:19.348+07:00  INFO 640 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : Starting BeServiceApplication using Java 23.0.1 with PID 640 (D:\love\be-saigon-360\target\classes started by honga in D:\love\be-saigon-360)
+2025-03-04T21:30:19.355+07:00  INFO 640 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-04T21:30:22.897+07:00  INFO 640 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'jpaAuditingHandler' with an equivalent definition: replacing [Root bean: class=org.springframework.data.auditing.AuditingHandler; scope=; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.auditing.AuditingHandler; scope=; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T21:30:22.943+07:00  INFO 640 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.data.jpa.domain.support.AuditingEntityListener' with an equivalent definition: replacing [Root bean: class=org.springframework.data.jpa.domain.support.AuditingEntityListener; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.jpa.domain.support.AuditingEntityListener; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T21:30:22.956+07:00  INFO 640 --- [be-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor' with an equivalent definition: replacing [Root bean: class=org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null] with [Root bean: class=org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessor; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null]
+2025-03-04T21:30:24.365+07:00  INFO 640 --- [be-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-04T21:30:25.685+07:00  INFO 640 --- [be-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1277 ms. Found 5 JPA repository interfaces.
+2025-03-04T21:30:28.624+07:00  INFO 640 --- [be-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8386 (http)
+2025-03-04T21:30:28.683+07:00  INFO 640 --- [be-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-04T21:30:28.684+07:00  INFO 640 --- [be-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-04T21:30:28.884+07:00  INFO 640 --- [be-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-04T21:30:28.886+07:00  INFO 640 --- [be-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9230 ms
+2025-03-04T21:30:29.342+07:00  INFO 640 --- [be-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-04T21:30:29.975+07:00  INFO 640 --- [be-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ed25612
+2025-03-04T21:30:29.998+07:00  INFO 640 --- [be-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-04T21:30:30.658+07:00  INFO 640 --- [be-service] [main] liquibase.database                       : Set default schema name to public
+2025-03-04T21:30:33.282+07:00  INFO 640 --- [be-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-04T21:30:33.403+07:00  INFO 640 --- [be-service] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-04T21:30:33.410+07:00  INFO 640 --- [be-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-04T21:30:33.433+07:00  INFO 640 --- [be-service] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-04T21:30:33.435+07:00  INFO 640 --- [be-service] [main] liquibase.util                           : Run:                          0
+2025-03-04T21:30:33.436+07:00  INFO 640 --- [be-service] [main] liquibase.util                           : Previously run:               2
+2025-03-04T21:30:33.439+07:00  INFO 640 --- [be-service] [main] liquibase.util                           : Filtered out:                 0
+2025-03-04T21:30:33.440+07:00  INFO 640 --- [be-service] [main] liquibase.util                           : -------------------------------
+2025-03-04T21:30:33.440+07:00  INFO 640 --- [be-service] [main] liquibase.util                           : Total change sets:            2
+2025-03-04T21:30:33.443+07:00  INFO 640 --- [be-service] [main] liquibase.util                           : Update summary generated
+2025-03-04T21:30:33.450+07:00  INFO 640 --- [be-service] [main] liquibase.command                        : Command execution complete
+2025-03-04T21:30:33.691+07:00  INFO 640 --- [be-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-04T21:30:33.878+07:00  INFO 640 --- [be-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-03-04T21:30:33.950+07:00  INFO 640 --- [be-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-04T21:30:34.777+07:00  INFO 640 --- [be-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-04T21:30:35.046+07:00  WARN 640 --- [be-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-04T21:30:35.116+07:00  INFO 640 --- [be-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-04T21:30:39.299+07:00  INFO 640 --- [be-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-04T21:30:39.312+07:00  INFO 640 --- [be-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-04T21:30:42.348+07:00  WARN 640 --- [be-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-04T21:30:42.689+07:00  WARN 640 --- [be-service] [main] o.s.w.s.resource.ResourceHandlerUtils    : Appended trailing slash to static resource location: classpath:/files/images/**/
+2025-03-04T21:30:46.197+07:00  INFO 640 --- [be-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8386 (http) with context path '/'
+2025-03-04T21:30:46.314+07:00  INFO 640 --- [be-service] [main] c.b.s.be_service.BeServiceApplication    : Started BeServiceApplication in 28.429 seconds (process running for 30.925)
+2025-03-04T21:30:50.674+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-04T21:30:50.675+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-04T21:30:50.681+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-03-04T21:30:51.122+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-6] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:30:51.122+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-4] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:30:51.123+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-6] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:30:51.123+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-4] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:31:07.749+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-10] c.b.s.b.configuration.SecurityConfig     : Access Token: ya29.a0AeXRPp7aTW-H-kiiNCqKflwuJG8BpxoYyeuxsGXduJ0QjG2sTEwL8THCQbb6tyTmei3Jm5gd40xuuVyOMv1QRq3NHXO_MH6js-MaA3brnMPBvrtd8dHuvK-7R70zAgP15TPrqFiScQ2kToXxy5u9e5k-F8MffsYcRREBIHVTaCgYKAQESARESFQHGX2Mi9MOGfYcUmzF9_oSzZJBSBg0175
+2025-03-04T21:31:07.751+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-10] c.b.s.b.configuration.SecurityConfig     : Refresh Token: 1//0eN77Bcpps6OxCgYIARAAGA4SNwF-L9IrXmg5ctITm4z8K5LttXuZ8VaFoYN0NxWJMxi1O1FZCtuGlw28QV2-A7KoJ9DUDaeOVrg
+2025-03-04T21:31:09.935+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-2] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:31:09.937+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-2] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:31:09.968+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-6] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:31:09.969+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-6] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:34:49.458+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:34:49.458+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-3] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:34:49.486+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:34:49.491+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-3] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:35:08.847+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-7] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:35:08.849+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-7] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:35:08.878+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.s.A.CustomWebSocketHandler       : Connected WebSocket with sessionId: a9dca8bc-ab10-4f8b-a690-1e467e8c3863
+2025-03-04T21:35:08.880+07:00  INFO 640 --- [be-service] [http-nio-8386-exec-1] c.b.s.b.s.A.CustomWebSocketHandler       : WebSocket URI: ws://localhost:8386/ws?sessionId=a9dca8bc-ab10-4f8b-a690-1e467e8c3863

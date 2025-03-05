@@ -1,0 +1,63 @@
+spring:
+    application:
+        name: ${APP_NAME:be-service}
+    security:
+        enabled: false
+        oauth2:
+            client:
+                registration:
+                    google:
+                        client-id: ${CLIENT_ID:20215602400-0904ks7h9flpp5enrlc62jo54i8k13q4.apps.googleusercontent.com}
+                        client-secret: ${CLIEN_SECRET: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}
+                        scope: openid,profile,email
+                        redirect-uri: http://localhost:8386/login/oauth2/code/google
+                        authorization-grant-type: authorization_code
+            provider:
+                google:
+                    authorization-uri: ${AUTHORIZATION_URI:https://accounts.google.com/o/oauth2/auth}
+                    token-uri: ${TOKEN_URI:https://oauth2.googleapis.com/token}
+                    token-info-uri: ${TOKEN_INFO_URI:https://www.googleapis.com/oauth2/v3/tokeninfo}
+                    user-info-uri: ${USER_INFO_URI:https://www.googleapis.com/oauth2/v3/userinfo}
+                    user-name-attribute: email
+    
+    datasource:
+        url: ${DB_URL:jdbc:postgresql://localhost:5432/nghien-cuu-khoa-hoc-2025}
+        username: ${DB_USERNAME:postgres}
+        password: ${DB_PASSWORD:123456}
+    main:
+        allow-bean-definition-overriding: true
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                jdbc:
+                lob:
+                    non_contextual_creation: true
+                enable_lazy_load_no_trans: true
+    liquibase:
+        change-log: ${CHANGE_LOG:classpath:db/changelogs/master-changelog.xml}
+        enabled: true
+server:
+    port: ${PORT:8386}
+    servlet:
+        session:
+            cookie:
+                http-only: true
+                secure: true
+                name: MYSESSIONID
+            timeout: 30m
+            persistent: false
+
+logging:
+    level:
+        root: INFO
+        com.example: DEBUG
+    file:
+        name: logs/spring-boot-app.log
+    pattern:
+        console: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'
+        
+custom:
+    port:
+        back-end: ${PORT_BE:http://localhost:8386}
+        client: ${PORT_CLIENT:http://localhost:3000}
