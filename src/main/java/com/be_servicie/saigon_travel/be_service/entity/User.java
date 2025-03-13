@@ -14,6 +14,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -35,17 +36,11 @@ public class User extends BaseEntity {
     @Column(name = "id", updatable = false, nullable = false)
     private String id; // UUID
 
-    @Column(name = "email", nullable = false, unique = true)
-    private String email;
-
     @Column(name = "name", nullable = false, length = 100)
     private String name;
 
-    @Column(name = "address", nullable = false, length = 200)
-    private String address;
-
-    @Column(name = "phone_number", nullable = false, length = 20)
-    private String phone_number;
+    @Column(name = "email", nullable = false, unique = true)
+    private String email;
 
     @Column(name = "image_url", length = 255)
     private String imageUrl;
@@ -62,4 +57,7 @@ public class User extends BaseEntity {
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private Set<Role> roles = new HashSet<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<FavoriteDestination> favoriteDestinations = new HashSet<>();
 }

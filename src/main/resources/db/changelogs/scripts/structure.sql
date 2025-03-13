@@ -3,8 +3,6 @@ CREATE TABLE users (
     id VARCHAR(255) PRIMARY KEY,
     email VARCHAR(255),
     name VARCHAR(150),
-    address VARCHAR(150),
-    phone_number VARCHAR(20),
     image_url VARCHAR(255),
     token TEXT,
     expiry TIMESTAMP,
@@ -26,6 +24,31 @@ CREATE TABLE roles (
     created_by VARCHAR(255),
     updated_by VARCHAR(255)
 );
+
+-- Bảng destination
+
+CREATE TABLE destination (
+    id VARCHAR(255) PRIMARY KEY,
+    name_vi VARCHAR(255),
+    name_en VARCHAR(255),
+    address_vi VARCHAR(255),
+    address_en VARCHAR(255),
+    open_time VARCHAR(100),
+    title_vi VARCHAR(255), 
+    title_en VARCHAR(255), 
+    description_vi TEXT, 
+    description_en TEXT, 
+    content_vi TEXT,
+    content_en TEXT,
+    image_banner VARCHAR(255),
+    image_content VARCHAR(255),
+    status BOOLEAN,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_by VARCHAR(255),
+    updated_by VARCHAR(255)
+);
+
 
 -- Bảng menu_function
 CREATE TABLE menu_function (
@@ -66,29 +89,6 @@ CREATE TABLE user_roles (
     PRIMARY KEY (user_id, role_id)
 );
 
-CREATE TABLE destination (
-    id VARCHAR(255) PRIMARY KEY,
-    name_vi VARCHAR(255),
-    name_en VARCHAR(255),
-    address_vi VARCHAR(255),
-    address_en VARCHAR(255),
-    open_time VARCHAR(100),
-    title_vi VARCHAR(255), 
-    title_en VARCHAR(255), 
-    description_vi TEXT, 
-    description_en TEXT, 
-    content_vi TEXT,
-    content_en TEXT,
-    image_banner VARCHAR(255),
-    image_content VARCHAR(255),
-    status BOOLEAN,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    created_by VARCHAR(255),
-    updated_by VARCHAR(255)
-);
-
-------------------------------
 -- Email unique
 ALTER TABLE users
 ADD CONSTRAINT uq_users_email UNIQUE (email);
@@ -104,3 +104,17 @@ ADD CONSTRAINT fk_user_roles_user FOREIGN KEY (user_id) REFERENCES users (id) ON
 -- user_roles - role
 ALTER TABLE user_roles
 ADD CONSTRAINT fk_user_roles_role FOREIGN KEY (role_id) REFERENCES roles (id) ON DELETE CASCADE;
+
+-- Bảng favorite_destinations (Người dùng lưu địa điểm yêu thích)
+CREATE TABLE favorite_destinations (
+    id VARCHAR(255) PRIMARY KEY,
+    user_id VARCHAR(255) NOT NULL,
+    destination_id VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_by VARCHAR(255),
+    updated_by VARCHAR(255),
+
+    CONSTRAINT fk_favorite_user FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE,
+    CONSTRAINT fk_favorite_destination FOREIGN KEY (destination_id) REFERENCES destination (id) ON DELETE CASCADE
+);

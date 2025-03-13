@@ -69,7 +69,7 @@ public class SecurityConfig {
                                                                                 .getRefreshToken().getTokenValue());
                                                         }
 
-                                                        response.sendRedirect(client + "/en");
+                                                        response.sendRedirect(client + "/auth-success");
                                                 }));
 
                 return http.build();

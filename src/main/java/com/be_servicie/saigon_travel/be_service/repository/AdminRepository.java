@@ -10,6 +10,5 @@ import com.be_servicie.saigon_travel.be_service.entity.User;
 @Repository
 public interface AdminRepository extends JpaRepository<User, String>{
     boolean existsByEmail(String email);
-
     Optional<User> findByEmail(String email);
 }

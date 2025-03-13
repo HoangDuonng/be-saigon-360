@@ -18,6 +18,8 @@ public class DestinationDTO {
     private String title_en;
     private String description_vi;
     private String description_en;
+    private String content_en;
+    private String content_vi;
     private String image_banner;
     private String image_content;
     private Boolean status;

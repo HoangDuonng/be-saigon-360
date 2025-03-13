@@ -28,6 +28,8 @@ public class DestinationMapper {
                 .title_en(Objects.equals(lang, "en") ? destination.getTitle_en() : null)
                 .description_vi(Objects.equals(lang, "vi") ? destination.getDescription_vi() : null)
                 .description_en(Objects.equals(lang, "en") ? destination.getDescription_en() : null)
+                .content_en(Objects.equals(lang, "en") ? destination.getContent_en() : null)
+                .content_vi(Objects.equals(lang, "en") ? destination.getContent_vi() : null)
                 .image_banner(destination.getImage_banner())
                 .image_content(destination.getImage_content())
                 .status(destination.getStatus())

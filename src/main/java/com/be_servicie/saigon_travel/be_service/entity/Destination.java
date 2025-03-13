@@ -2,7 +2,10 @@ package com.be_servicie.saigon_travel.be_service.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+
+
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
 
 @Entity
 @Table(name = "destination")
@@ -42,6 +45,12 @@ public class Destination extends BaseEntity {
     
     @Column(name = "description_en", columnDefinition = "TEXT")
     private String description_en;
+
+    @Column(name = "content_en", columnDefinition = "TEXT")
+    private String content_en;
+    
+    @Column(name = "content_vi", columnDefinition = "TEXT")
+    private String content_vi;
 
     @Column(name = "image_banner")
     private String image_banner;
