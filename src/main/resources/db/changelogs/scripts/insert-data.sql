@@ -6,24 +6,24 @@ INSERT INTO roles (id, name, description, slug, created_by, updated_by) VALUES
 ('role2', 'User', 'Standard user role', 'user', 'system', 'system');
 
 INSERT INTO menu_function (id, name_en, name_vi, active, created_by, updated_by) VALUES
-('menu1', 'Destinations', 'Điểm du lịch', true, 'system', 'system'),
-('menu2', '360 Destination', 'Địa điểm 360', true, 'system', 'system');
+('menu1', 'Destinations', 'Điểm du lịch', true, 'system', 'system');
+-- ('menu2', '360 Destination', 'Địa điểm 360', true, 'system', 'system');
 
 INSERT INTO sub_function (id, name_en, name_vi, description_en, description_vi, active, url, mfunc_id, created_by, updated_by) VALUES
 ('sub1', 'Ho Chi Minh Book Street ', 'Đường sách Thành phố', 'Đường sách Thành phố', 'Đường sách Thành phố', true, '/destinations/book-street', 'menu1', 'system', 'system'),
 ('sub2', 'Saigon Notre Dame Cathedral', 'Nhà thờ Đức Bà', 'Saigon Notre Dame Cathedral', 'Nhà thờ Đức Bà', true, '/destinations/saigon-notre-dame-cathedral', 'menu1', 'system', 'system'),
 ('sub3', 'Metro Ben Thanh - Suoi Tien', 'Ga tàu điện Metro - Suối Tiên', 'Metro Ben Thanh - Suoi Tien', 'Ga tàu điện Metro - Suối Tiên', true, '/destinations/metro-ben-thanh-suoi-tien', 'menu1', 'system', 'system'),
 ('sub4', 'Ben Thanh Market', 'Chợ Bến Thành', 'Ben Thanh Market', 'Chợ Bến Thành', true, '/destinations/ben-thanh-market', 'menu1', 'system', 'system'),
-('sub5', 'Ho Chi Minh Book Street Virtual Panorama', 'Đường sách Thành phố', 'Đường sách Thành phố', 'Đường sách Thành phố', true, '/panoramas/book-street', 'menu2', 'system', 'system'),
-('sub6', 'Saigon Notre Dame Cathedral Virtual Panorama', 'Nhà thờ Đức Bà', 'Saigon Notre Dame Cathedral', 'Nhà thờ Đức Bà', true, '/panoramas/saigon-notre-dame-cathedral', 'menu2', 'system', 'system'),
-('sub7', 'Metro Ben Thanh - Suoi Tien Virtual Panorama', 'Ga tàu điện Metro - Suối Tiên', 'Metro Ben Thanh - Suối Tiên', 'Ga tàu điện Metro - Suối Tiên', true, '/panoramas/metro-ben-thanh-suoi-tien', 'menu2', 'system', 'system'),
-('sub8', 'Ben Thanh Market Virtual', 'Chợ Bến Thành Panorama', 'Ben Thanh Market', 'Chợ Bến Thành', true, '/panoramas/ben-thanh-market', 'menu2', 'system', 'system'),
+-- ('sub5', 'Ho Chi Minh Book Street Virtual Panorama', 'Đường sách Thành phố', 'Đường sách Thành phố', 'Đường sách Thành phố', true, '/panoramas/book-street', 'menu2', 'system', 'system'),
+-- ('sub6', 'Saigon Notre Dame Cathedral Virtual Panorama', 'Nhà thờ Đức Bà', 'Saigon Notre Dame Cathedral', 'Nhà thờ Đức Bà', true, '/panoramas/saigon-notre-dame-cathedral', 'menu2', 'system', 'system'),
+-- ('sub7', 'Metro Ben Thanh - Suoi Tien Virtual Panorama', 'Ga tàu điện Metro - Suối Tiên', 'Metro Ben Thanh - Suối Tiên', 'Ga tàu điện Metro - Suối Tiên', true, '/panoramas/metro-ben-thanh-suoi-tien', 'menu2', 'system', 'system'),
+-- ('sub8', 'Ben Thanh Market Virtual', 'Chợ Bến Thành Panorama', 'Ben Thanh Market', 'Chợ Bến Thành', true, '/panoramas/ben-thanh-market', 'menu2', 'system', 'system'),
 ('sub9', '30-4 Park', 'Công viên 30-4', '30-4 Park', 'Công viên 30-4', true, '/destinations/30-4-park', 'menu1', 'system', 'system'),
 ('sub10', 'Saigon Central Post Office', 'Bưu điện Trung tâm Sài Gòn', 'Saigon Central Post Office', 'Bưu điện Trung tâm Sài Gòn', true, '/destinations/saigon-central-post-office', 'menu1', 'system', 'system'),
-('sub11', '30-4 Park Virtual Panorama', 'Công viên 30-4 Virtual Panorama', '30-4 Park Virtual Panorama', 'Công viên 30-4 Virtual Panorama', true, '/panoramas/30-4-park', 'menu2', 'system', 'system'),
-('sub12', 'Saigon Central Post Office Virtual Panorama', 'Bưu điện Trung tâm Sài Gòn Virtual Panorama', 'Saigon Central Post Office Virtual Panorama', 'Bưu điện Trung tâm Sài Gòn Virtual Panorama', true, '/panoramas/saigon-central-post-office', 'menu2', 'system', 'system'),
-('sub13', 'Nguyen Hue Walking Street', 'Phố đi bộ Nguyễn Huệ', 'Nguyen Hue Walking Street', 'Phố đi bộ Nguyễn Huệ', true, '/destinations/nguyen-hue-walk-street', 'menu1', 'system', 'system'),
-('sub14', 'Nguyen Hue Walking Street Virtual Panorama', 'Phố đi bộ Nguyễn Huệ Virtual Panorama', 'Nguyen Hue Walking Street Virtual Panorama', 'Phố đi bộ Nguyễn Huệ Virtual Panorama', true, '/panoramas/nguyen-hue-walk-street', 'menu2', 'system', 'system');
+-- ('sub11', '30-4 Park Virtual Panorama', 'Công viên 30-4 Virtual Panorama', '30-4 Park Virtual Panorama', 'Công viên 30-4 Virtual Panorama', true, '/panoramas/30-4-park', 'menu2', 'system', 'system'),
+-- ('sub12', 'Saigon Central Post Office Virtual Panorama', 'Bưu điện Trung tâm Sài Gòn Virtual Panorama', 'Saigon Central Post Office Virtual Panorama', 'Bưu điện Trung tâm Sài Gòn Virtual Panorama', true, '/panoramas/saigon-central-post-office', 'menu2', 'system', 'system'),
+('sub13', 'Nguyen Hue Walking Street', 'Phố đi bộ Nguyễn Huệ', 'Nguyen Hue Walking Street', 'Phố đi bộ Nguyễn Huệ', true, '/destinations/nguyen-hue-walk-street', 'menu1', 'system', 'system');
+-- ('sub14', 'Nguyen Hue Walking Street Virtual Panorama', 'Phố đi bộ Nguyễn Huệ Virtual Panorama', 'Nguyen Hue Walking Street Virtual Panorama', 'Phố đi bộ Nguyễn Huệ Virtual Panorama', true, '/panoramas/nguyen-hue-walk-street', 'menu2', 'system', 'system');
 
 INSERT INTO user_roles (user_id, role_id, created_by, updated_by) VALUES
 ('user1', 'role1', 'system', 'system');
@@ -73,8 +73,8 @@ Inside the cathedral is a large, airy space with soaring columns, colorful stain
 In addition, the church is also famous for its bell system consisting of 6 bells, cast in France and brought to Vietnam in 1879. Each bell has a different pitch, which when mixed together creates a melodious and sacred piece of music, echoing throughout the central area of the city.
 
 Notre Dame Cathedral is not only a religious symbol but also an attractive tourist destination, attracting millions of visitors every year. Coming here, visitors can not only admire the unique architectural beauty but also learn about the history, culture and beliefs of the people of Saigon. The church is also the venue for many important events of the city, such as Christmas, Easter and concerts, attracting the attention of a large audience.',
-'saigon-notre-dame-cathedral-about1,saigon-notre-dame-cathedral-about2,saigon-notre-dame-cathedral-about3,saigon-notre-dame-cathedral-about4,saigon-notre-dame-cathedral-about5',
-'saigon-notre-dame-cathedral1,saigon-notre-dame-cathedral2',
+'saigon-notre-dame-cathedral-about1.png,saigon-notre-dame-cathedral-about2.png,saigon-notre-dame-cathedral-about3.png,saigon-notre-dame-cathedral-about4.png,saigon-notre-dame-cathedral-about5.png',
+'saigon-notre-dame-cathedral1.png,saigon-notre-dame-cathedral2.png',
 true, 'system', 'system'),
 
 ('book-street',
@@ -105,8 +105,8 @@ With a length of about 144 meters, Nguyen Van Binh Book Street focuses on many b
 Book Street also regularly organizes cultural events, such as exchanges with authors, new book introductions, book exhibitions, and activities for children. These events attract the participation of a large number of people and tourists, creating a lively and bustling atmosphere.
 
 The architectural space of Book Street is also a special highlight. The road is designed in a modern style, combined with traditional elements, creating a harmonious and friendly space. The rows of green trees, the lovely stone chairs and the unique art installations create an ideal space to relax and enjoy reading culture.',
-'duongsach1,duongsach2,duongsach3,duongsach4,duongsach5',
-'duongsach1,duongsach2,duongsach3,duongsach4,duongsach5',
+'duongsach1.png,duongsach2.png,duongsach3.png,duongsach4.png,duongsach5.png',
+'duongsach1.png,duongsach2.png,duongsach3.png,duongsach4.png,duongsach5.png',
 true, 'system', 'system'),
 
 ('metro-ben-thanh-suoi-tien',
@@ -136,8 +136,8 @@ Không chỉ giúp giảm ùn tắc giao thông, tuyến metro còn mang đến 
 The metro line is designed with advanced technology, ensuring safety, convenience and environmental friendliness. The stations are built in a modern style, fully equipped with facilities for passengers, such as escalators, elevators, electronic information systems and comfortable waiting areas.
 
 Not only does it help reduce traffic congestion, the metro line also brings many other benefits to the city. It helps connect economic, cultural and tourism areas, creating favorable conditions for socio-economic development. In addition, the metro line also contributes to reducing environmental pollution, encouraging people to use public transport.',
-'metro-ben-thanh-suoi-tien-about1,metro-ben-thanh-suoi-tien-about2',
-'metro-ben-thanh-suoi-tien1,metro-ben-thanh-suoi-tien2',
+'metro-ben-thanh-suoi-tien-about1.png,metro-ben-thanh-suoi-tien-about2.png',
+'metro-ben-thanh-suoi-tien1.png,metro-ben-thanh-suoi-tien2.png',
 true, 'system', 'system'),
 
 ('ben-thanh-market',
@@ -165,8 +165,8 @@ At Ben Thanh Market, you can find everything, from clothes, shoes, handicrafts t
 The market space is always bustling and lively, with the sound of hawking, bargaining, and everyday stories of vendors. Coming to Ben Thanh Market, you will have the opportunity to experience an integral part of Saigon life. The market is not only a place to buy and sell goods but also an attractive tourist destination, attracting millions of tourists every year.
 
 Ben Thanh Market is not only a symbol of Saigon but also a part of Vietnamese history and culture. The market has witnessed many important events of the city, from the French colonial period to the years of war and peace. Ben Thanh Market has always been a familiar destination for Saigon people and tourists from all over the world.',
-'ben-thanh-market-about1,ben-thanh-market-about2',
-'ben-thanh-market1,ben-thanh-market2',
+'ben-thanh-market-about1.png,ben-thanh-market-about2.png',
+'ben-thanh-market1.png,ben-thanh-market2.png',
 true, 'system', 'system'),
 
 ('30-4-park',
@@ -195,8 +195,8 @@ Công viên 30/4 còn là nơi diễn ra nhiều hoạt động văn hóa, ngh�
 With rows of old trees providing shade, lush green lawns and spacious walkways, 30/4 Park offers a airy, fresh space, helping to dispel the fatigue and stress of everyday life. Coming here, you can easily find groups of young people gathering to chat, elderly people practicing gymnastics, or young children playing on the lawn.
 
 30/4 Park is also the venue for many cultural, artistic and entertainment activities. On holidays, Tet, the park is often splendidly decorated, attracting a large number of people to visit and have fun. In addition, the park has many sidewalk cafes, where you can sip a delicious cup of coffee while watching the citys vibrant life.',
-'cong-vien-30-4-about1,cong-vien-30-4-about2',
-'cong-vien-30-4-1,cong-vien-30-4-2',
+'cong-vien-30-4-about1.png,cong-vien-30-4-about2.png',
+'cong-vien-30-4-1.png,cong-vien-30-4-2.png',
 true, 'system', 'system'),
 
 ('saigon-central-post-office',
@@ -225,8 +225,8 @@ Bưu điện Trung tâm Sài Gòn không chỉ là một công trình kiến tr�
 When entering the post office, you will be impressed by the spacious, airy space with high arches, solid stone columns and large windows that receive natural light. On the walls are large murals, depicting important historical moments of Vietnam.
 
 Saigon Central Post Office is not only a beautiful architectural work but also a place to preserve the cultural and historical values of the city. Coming here, you can learn about the past of Saigon, send postcards to relatives and friends, or simply relax and enjoy the ancient atmosphere of a unique architectural work.',
-'buu-dien-sai-gon-about1,buu-dien-sai-gon-about2',
-'buu-dien-sai-gon1,buu-dien-sai-gon2',
+'buu-dien-sai-gon-about1.png,buu-dien-sai-gon-about2.png',
+'buu-dien-sai-gon1.png,buu-dien-sai-gon2.png',
 true, 'system', 'system'),
 ('nguyen-hue-walk-street',
 'Phố đi bộ Nguyễn Huệ', 'Nguyen Hue Walking Street',
@@ -237,8 +237,8 @@ true, 'system', 'system'),
 'Nguyen Hue Walking Street is a famous public space located in the heart of Ho Chi Minh City. It is a favorite destination for locals and tourists, where they can stroll, shop, dine and participate in entertainment activities.',
 'Phố đi bộ Nguyễn Huệ, một trong những điểm đến nổi tiếng nhất của Sài Gòn, là biểu tượng của sự hiện đại và năng động. Với không gian rộng lớn, kiến trúc độc đáo và nhiều hoạt động vui chơi giải trí, phố đi bộ Nguyễn Huệ thu hút hàng ngàn du khách mỗi ngày.',
 'Nguyen Hue Walking Street, one of Saigons most famous destinations, is a symbol of modernity and dynamism. With its vast space, unique architecture and many entertainment activities, Nguyen Hue Walking Street attracts thousands of visitors every day.',
-'pho-di-bo-nguyen-hue-about1,pho-di-bo-nguyen-hue-about2',
-'pho-di-bo-nguyen-hue1,pho-di-bo-nguyen-hue2',
+'pho-di-bo-nguyen-hue-about1.png,pho-di-bo-nguyen-hue-about2.png',
+'pho-di-bo-nguyen-hue1.png,pho-di-bo-nguyen-hue2.png',
 true, 'system', 'system');
 
 INSERT INTO favorite_destinations (id, user_id, destination_id, created_by, updated_by) VALUES

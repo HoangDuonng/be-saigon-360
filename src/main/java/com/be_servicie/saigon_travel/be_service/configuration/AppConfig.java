@@ -38,14 +38,12 @@ public class AppConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/images/**")
                 .addResourceLocations("classpath:/files/images/**");
 
-        registry.addResourceHandler("/images/marketing/**")
-                .addResourceLocations("classpath:/files/images/marketing/");
+        registry.addResourceHandler("/images/destination/banner/**")
+                .addResourceLocations("classpath:/files/images/destination/banner");
 
-        registry.addResourceHandler("/images/sub_menu/**")
-                .addResourceLocations("classpath:/files/images/sub_menu/");
-
-        registry.addResourceHandler("/file_convert/**")
-                .addResourceLocations("classpath:/files/file_convert/");
+                
+        registry.addResourceHandler("/images/destination/content/**")
+        .addResourceLocations("classpath:/files/images/destination/content");
 
     }
 

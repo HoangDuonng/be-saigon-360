@@ -36,6 +36,31 @@ public class DestinationMapper {
                 .build();
     }
 
+
+    public DestinationDTO toDTO(Destination destination) {
+        if (destination == null) {
+            return null;
+        }
+
+        return DestinationDTO.builder()
+                .id(destination.getId())
+                .name_vi(destination.getName_vi())
+                .name_en(destination.getName_en())
+                .address_vi(destination.getAddress_vi())
+                .address_en(destination.getAddress_en())
+                .open_time(destination.getOpen_time())
+                .title_vi(destination.getTitle_vi())
+                .title_en(destination.getTitle_en())
+                .description_vi(destination.getDescription_vi())
+                .description_en(destination.getDescription_en())
+                .content_vi(destination.getContent_vi())
+                .content_en(destination.getContent_en())
+                .image_banner(destination.getImage_banner())
+                .image_content(destination.getImage_content())
+                .status(destination.getStatus())
+                .build();
+    }
+
     public List<DestinationDTO> toListDTO(List<Destination> destinations, String lang) {
         if (destinations == null || destinations.isEmpty()) {
             return Collections.emptyList(); 
